@@ -1,0 +1,38 @@
+.contenedor-tarjetas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+@media(max-width: 1080px){
+    .contenedor-tarjetas{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 720px){
+    .contenedor-tarjetas{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.tarjeta-usuario{
+    width: 100%;
+    max-width: 300px;
+    height: 100px;
+    padding: 15px;
+    margin: 15px;
+    border: 1px solid rgb(212, 212, 212);
+    box-shadow: 0px 0px 20px 0px rgba(176,176,176,1);
+    border-radius: 10px;
+}
+@media(max-width: 340px){
+    .tarjeta-usuario{
+        width: 100%;
+        max-width: 260px;
+    }
+}
+
+.encabezado{
+    text-align: center;
+    color: rgb(34, 127, 248);
+    font-size: 2.2rem;
+}
